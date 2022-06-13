@@ -42,6 +42,12 @@ describe('sayHello()', function() {
     it("should return Hello, World! when passed the argument false", function(){
         expect(sayHello(false)).toBe("Hello, World!");
     })
+    it("should return Hello, World! when passed the argument '5'", function(){
+        expect(sayHello('5')).toBe("Hello, World!");
+    })
+    it("should return Hello, World! when passed the argument ''", function(){
+        expect(sayHello('')).toBe("Hello, World!");
+    })
 });
 
 describe('isFive()', function() {
